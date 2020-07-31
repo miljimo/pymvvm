@@ -17,7 +17,7 @@ class UIDesignerBase(object):
                 if(os.path.exists(self.__Filename) is not True):
                      raise TypeError("@Resource file {0} does not exists".format(self.__Filename));
                     
-        if(os.path.exists(self.__Filename)):
+        if(self.__Filename is not None) and os.path.exists(self.__Filename):
             uiparser  =  ResourceParser(filename  =  self.__Filename);
             self.__Resource  =  uiparser.Parse();
         
@@ -64,7 +64,8 @@ if(__name__ =="__main__"):
             pass;
 
         def ReTranslateUI(self):
-            print(self.Resource.Get("application.text", "Nothing"));
+            if(self.Resource is not None):
+                print(self.Resource.Get("application.text", "Nothing"));
             print("Retranslated UI");
             
             
