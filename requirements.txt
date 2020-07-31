@@ -1,0 +1,3 @@
+dispatchers-jimobama==0.1.0
+events-jimobama==0.0.1
+localisation-jimobama==0.0.1
