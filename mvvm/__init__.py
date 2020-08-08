@@ -1,7 +1,8 @@
 
 from localisation       import Resource
-from .argsinitialiser   import ArgsInitialiser
-from .uidesignerbase    import UIDesignerBase
-from .viewmodelbase     import ViewModelBase
+from mvvm.argsvalidator   import ArgsValidator
+from mvvm.argsinitialiser   import ArgsInitialiser
+from mvvm.uidesignerbase    import UIDesignerBase
+from mvvm.viewmodelbase     import ViewModelBase
 
 
